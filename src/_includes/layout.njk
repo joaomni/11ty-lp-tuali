@@ -12,32 +12,23 @@
 				"inLanguage": "pt-BR"
 			}
 		</script>
-		<script src="https://cdn.tailwindcss.com"></script>
 		<link
 			rel="stylesheet"
 			type="text/css"
 			href="/css/styles.css"
 			media="screen"
 		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 	</head>
 
 	<body>
-		{{ content | safe }}
-		{% include "footer.njk" %}
-		<div class="relative">
-			<a
-				href="https://api.whatsapp.com/send?phone=5511995994243&text=Ol%C3%A1!%20Vi%20seu%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
-				class="dd-m-whatsapp"
-				target="_blank"
-				><span class="icon"></span
-			></a>
+		<div id="app">
+			{{ content | safe }}
+			{% include "footer.njk" %}
 		</div>
 		<!-- Carregue o JS após o HTML -->
-		<script
-			src="https://code.jquery.com/jquery-3.7.1.min.js"
-			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-			crossorigin="anonymous"
-		></script>
+		 {% include "vue.njk" %}
 		<script defer src="/js/scripts.js"></script>
 	</body>
 </html>
