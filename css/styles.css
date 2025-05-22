@@ -55,6 +55,10 @@ body {
   font-family: Montserrat, serif
 }
 
+.lora {
+  font-family: Lora, serif
+}
+
 .roboto {
   font-family: Roboto, serif
 }
@@ -69,6 +73,14 @@ body {
 
 .background-servicos {
   background-image: url(/images/background-servicos.png);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed
+}
+
+.background-compromisso {
+  background-image: url(/images/background-compromisso.png);
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;

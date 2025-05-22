@@ -53,7 +53,7 @@
 
 	<body>
 		<div id="app">
-			<header class="fixed top-[40px] right-[40px] z-10 cursor-pointer hover:bg-[#000]/10 p-2">
+			<header class="fixed top-[40px] right-[40px] z-10 cursor-pointer hover:bg-[#000]/10 bg-[#000]/5 p-2">
   <main>
     <span class="text-4xl font-bold text-[#5CC0F4]">☰</span>
   </main>
@@ -173,7 +173,7 @@
 		</div>
 	</main>
 </section>
-<!-- PORTIFOLIO -->
+<!-- TUALI -->
 <section class="w-full h-screen bg-[#00244E] tracking-[0.5px]">
 	<main class="w-full h-full flex items-center justify-center gap-20">
 		<img src="/images/logo-blue.png" width="248" height="100" alt="Tuali" />
@@ -254,40 +254,193 @@
 		</main>
 	</div>
 </section>
-<!-- POR QUE A TUALI -->
-<section class="w-full h-screen bg-[#5CC0F4] text-[#00638B] roboto">
-	<div>
-		<header class="flex items-center gap-6">
-			<span class="montserrat text-4xl font-bold">oi, somos a</span>
+<!-- DIFERENCIAIS -->
+<section class="w-full h-screen bg-[#5CC0F4] text-[#00638B] roboto px-16 py-12">
+	<div class="flex flex-col justify-center items-center gap-16">
+		<header class="flex items-center gap-6 mr-[288px]">
+			<span class="montserrat text-5xl font-bold">Por que a</span>
 			<img src="/images/logo-white.png" width="208" height="100" alt="Tuali" />
 		</header>
-		<main class="text-4xl font-bold">
-			<div class="flex flex-col">
+		<main class="text-4xl font-bold flex items-center gap-8 leading-[42px]">
+			<div class="flex flex-col gap-28">
 				<span>
-					porque a gente<br />
-					entrega com<br />
-					compromisso
+					&nbsp;porque a gente<br />
+					<span class="bg-[#B3D1E6]">&nbsp;entrega com&nbsp;</span><br />
+					<span class="bg-[#B3D1E6]">&nbsp;compromisso&nbsp;</span>
 				</span>
 				<span>
-					porque a gente<br />
-					faz parte do<br />
-					seu time
+					&nbsp;porque a gente<br />
+					<span class="bg-[#B3D1E6]">&nbsp;faz parte&nbsp;</span> do<br />
+					&nbsp;seu<span class="bg-[#B3D1E6]">&nbsp;time &nbsp;</span>
 				</span>
 			</div>
-			<div></div>
-			<div></div>
+			<div class="flex flex-col items-center gap-12">
+				<div class="w-1 h-[180px] bg-[#B3D1E6]"></div>
+				<div class="w-[120px] h-1 bg-[#B3D1E6]"></div>
+				<div class="w-1 h-[180px] bg-[#B3D1E6]"></div>
+			</div>
+			<div class="flex flex-col gap-28">
+				<span>
+					porque a<br />
+					<span class="bg-[#B3D1E6]">gente&nbsp;</span><br />
+					<span class="bg-[#B3D1E6]">resolve&nbsp;</span>
+				</span>
+				<span>
+					&nbsp;porque a gente<br />
+					<span class="bg-[#B3D1E6]">&nbsp;fala fácil, sem&nbsp;</span><br />
+					<span class="bg-[#B3D1E6]">&nbsp;enrolação&nbsp;</span>
+				</span>
+			</div>
+			<div class="flex flex-col items-center gap-12">
+				<div class="w-1 h-[180px] bg-[#B3D1E6]"></div>
+				<div class="w-[120px] h-1 bg-[#B3D1E6]"></div>
+				<div class="w-1 h-[180px] bg-[#B3D1E6]"></div>
+			</div>
+			<div class="flex">
+				<span>
+					&nbsp;e porque saúde<br />
+					&nbsp;e benefícios<br />
+					<span class="bg-[#B3D1E6]">&nbsp;precisam sair&nbsp;</span><br />
+					&nbsp;do papel e<br />
+					<span class="bg-[#B3D1E6]">&nbsp;fazer sentido&nbsp;&nbsp;</span
+					><br />
+					&nbsp;na
+					<span class="bg-[#B3D1E6]"
+						>&nbsp;vida real&nbsp;&nbsp;&nbsp;&nbsp;</span
+					>
+				</span>
+			</div>
 		</main>
 	</div>
 </section>
-<!-- <info-box
-	:number="1"
-	title="REDUÇÃO DE CUSTOS:"
-	:messages="[
-        'Evita o alto investimento inicial em',
-        'equipamentos, promovendo economia',
-        'e maior controle financeiro.'
-      ]"
-></info-box> -->
+<!-- COMO FAZEMOS-->
+<section class="w-full h-screen bg-[#00244E] roboto">
+	<div
+		class="w-full h-full flex items-center justify-center justify-center gap-40 px-16"
+	>
+		<article class="relative">
+			<aside class="absolute top-[-160px] left-[-140px]">
+				<img
+					src="/images/logo-white.png"
+					width="208"
+					height="100"
+					alt="Tuali"
+				/>
+			</aside>
+			<main class="flex flex-col gap-8">
+				<span class="text-4xl">
+					<p><span class="font-bold">Como</span> a</p>
+					<p>gente <span class="font-bold">faz</span></p>
+					<p class="font-bold">acontecer!</p>
+				</span>
+				<span class="text-lg">
+					<p>nosso jeito de trabalhar é</p>
+					<p>leve, claro e focado em</p>
+					<p>resultado. Nada de</p>
+					<p>processos engessados</p>
+					<p>ou joguinho de empurra.</p>
+				</span>
+			</main>
+		</article>
+		<main class="flex flex-col gap-6">
+			<tuali-box
+				number="1"
+				title="entendemos você"
+				text="fazemos um diagnóstico real do momento da empresa."
+			></tuali-box>
+			<tuali-box
+				number="2"
+				title="levantamos o que faz sentido"
+				text="analisamos operadoras, benefícios e cenários possíveis"
+			></tuali-box>
+			<tuali-box
+				number="3"
+				title="montamos uma solução com propósito"
+				text="cabe no bolso na entratégia e no dia a dia da empresa"
+			></tuali-box>
+			<tuali-box
+				number="4"
+				title="implantamos com cuidado"
+				text="RH não fica sobrecarregado. A gente entra pra somar"
+			></tuali-box>
+			<tuali-box
+				number="5"
+				title="seguimos juntos"
+				text="relacionamento ativo, suporte contínuo, atenção de verdade"
+			></tuali-box>
+		</main>
+	</div>
+</section>
+<!-- COMPROMISSO -->
+<section class="w-full h-screen background-compromisso lora">
+	<div class="w-full h-full grid grid-cols-3 px-20 py-20">
+		<main class="w-full h-full flex flex-col justify-between items-center">
+			<div class="mr-auto">
+				<tuali-compromisso
+					title="implantação com carinho"
+					text="A gente entra na casa do cliente com cuidado. Tudo bem explicado e bem feito."
+				></tuali-compromisso>
+			</div>
+			<div class="ml-auto mb-[80px]">
+				<tuali-compromisso
+					title="negociação com peso"
+					text="Nossa galera do placement senta com as operadoras pra buscar as melhores condições. Sem papo furado."
+				></tuali-compromisso>
+			</div>
+		</main>
+		<main class="w-full h-full flex flex-col justify-end items-center">
+			<div class="ml-auto">
+				<tuali-compromisso
+					title="implantação com carinho"
+					text="A gente entra na casa do cliente com cuidado. Tudo bem explicado e bem feito."
+				></tuali-compromisso>
+			</div>
+		</main>
+		<main class="w-full h-full flex flex-col justify-between items-center">
+			<div class="mr-auto">
+				<tuali-compromisso
+					title="implantação com carinho"
+					text="A gente entra na casa do cliente com cuidado. Tudo bem explicado e bem feito."
+				></tuali-compromisso>
+			</div>
+			<div class="ml-auto mb-[200px]">
+				<tuali-compromisso
+					title="negociação com peso"
+					text="Nossa galera do placement senta com as operadoras pra buscar as melhores condições. Sem papo furado."
+				></tuali-compromisso>
+			</div>
+		</main>
+	</div>
+</section>
+<!-- CONTATO -->
+<section class="w-full h-screen bg-[#00244E] montserrat">
+	<main class="w-full h-full flex flex-col items-center justify-center gap-20">
+		<header class="flex items-center gap-20 mt-[10vh] relative">
+			<aside class="absolute left-[-308px]">
+				<img
+					src="/images/logo-blue.png"
+					width="230"
+					height="100"
+					alt="Logo Tuali"
+				/>
+			</aside>
+			<span class="font-bold text-4xl">
+				<p class="lora">A gente caminha</p>
+				<p class="italic">Junto com você!</p>
+			</span>
+		</header>
+		<footer class="flex flex-col gap-4">
+			<div class="flex items-center gap-4">
+				<svg-whatsapp width="48" height="48" fill="#5CC0F4"></svg-whatsapp>
+				<p class="text-2xl">+55 11 93737 3032</p>
+			</div>
+			<div class="flex items-center gap-4">
+				<img src="/images/email.png" width="48" height="48" alt="Email Tuali" />
+				<p class="text-2xl">atendimento@tuali.com.br</p>
+			</div>
+		</footer>
+	</main>
+</section>
 
 			<!-- WHATSAPP -->
 <div class="relative">
@@ -302,7 +455,7 @@
 
 		</div>
 		<!-- Carregue o JS após o HTML -->
-		 
+		
 <script>
 	const app = Vue.createApp({})
 
@@ -326,10 +479,106 @@
 	  `
 	})
 
+	app.component('tuali-box', {
+		props: {
+			number: String,
+			title: String,
+			text: String
+		},
+		template: `
+	    <div class="flex items-center gap-6">
+				<aside class="bg-[#F2E35B] w-fit px-4 py-1 rounded-full">
+					<span class="text-[#00244E] text-5xl font-bold">{{ number }}</span>
+				</aside>
+				<div class="max-w-[178px] w-fit">
+					<span class="text-2xl font-bold">{{ title }}</span>
+				</div>
+				<article class="bg-[#F2E35B] w-fit max-w-[248px] px-6 py-4 rounded-2xl">
+					<span class="text-sm text-[#00244E]"
+						>{{ text }}</span
+					>
+				</article>
+			</div>
+	  `
+	})
+
+	app.component('tuali-compromisso', {
+		props: {
+			title: String,
+			text: String
+		},
+		template: `
+			<article class="w-fit max-w-[340px] max-h-[100px] flex flex-col items-center">
+				<header
+					class="bg-[#00638B] pb-1.5 px-4 rounded-tr-lg rounded-tl-lg max-w-[280px]"
+				>
+					<span class="text-center text-xl font-bold roboto">{{ title }}</span>
+				</header>
+				<footer class="bg-[#FFD8CA] px-6 py-3 rounded-lg">
+					<span class="text-black">
+						{{ text }}
+					</span>
+				</footer>
+			</article>
+	  `
+	})
+
+	app.component('svg-whatsapp', {
+		props: {
+			fill: {
+				type: String,
+				default: '#5CC0F4'
+			},
+			width: {
+				type: [String, Number],
+				default: '48'
+			},
+			height: {
+				type: [String, Number],
+				default: '48'
+			}
+		},
+		template: `
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 231 231"
+				:fill="fill"
+				:width="width"
+				:height="height"
+			>
+				<g>
+					<path
+						d="M117.9,53c-33.7,0-61.1,27.4-61.1,61.1c0,11.8,3.4,23.2,9.7,33.1l1.5,2.3l-5.9,21.2l22.4-5.3l2.1,1.3
+							c9.4,5.6,20.3,8.6,31.3,8.6c33.7,0,61.1-27.4,61.1-61.1S151.6,53,117.9,53z
+							M152.7,140.4c-0.6,3-7,6.8-11.1,7.9
+							c-10.2,2.7-24.6-5.1-38.8-17.5c-14.3-12.4-23.9-25.6-22.7-36.1c0.5-4.2,3.5-11.1,6.3-12
+							c2.8-0.9,4.8,0,7.7,0.9
+							c1.4,1.6,3.2,3.5,5.2,5.8c2.7,3,4.5,5.7,5.6,7.6c0.9,1.6,0.6,3.6-0.8,4.8l-4.9,4.4
+							c-0.9,0.8-1.2,2.1-0.7,3.2
+							c1.5,3.2,5,9.8,10.3,14.4c5.2,4.6,12.3,7.2,15.7,8.2c1.1,0.4,2.4-0.1,3-1.1l3.7-5.4
+							c1-1.5,3-2.1,4.7-1.4
+							c2,0.9,5,2.3,8.3,4.5c2.5,1.7,4.7,3.2,6.4,4.4C152.1,135.7,153.3,137.6,152.7,140.4z"
+					/>
+					<path
+						d="M115.5,0C51.7,0,0,51.7,0,115.5
+							c0,63.8,51.7,115.5,115.5,115.5
+							c63.8,0,115.5-51.7,115.5-115.5
+							C230.9,51.7,179.2,0,115.5,0z
+							M117.9,187.2c-12.4,0-24.5-3.1-35.3-9.1
+							l-37.5,8.9l9.9-35.7
+							c-6.7-11.3-10.2-24.1-10.2-37.3
+							c0-40.3,32.8-73.1,73.1-73.1
+							S191,73.8,191,114.1
+							C191,154.4,158.2,187.2,117.9,187.2z"
+					/>
+				</g>
+			</svg>
+		`
+	})
+
 	app.mount('#app')
 </script>
 
 
-		<script defer src="/js/scripts.js"></script>
 	</body>
 </html>
