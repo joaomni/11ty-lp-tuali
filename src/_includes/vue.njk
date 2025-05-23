@@ -9,14 +9,14 @@
 			text: String
 		},
 		template: `
-	    <div class="max-w-[228px] bg-white rounded-2xl text-black px-5 py-7 relative">
-	      <main class="flex flex-col gap-6">
-	        <header class="absolute top-[-42px] left-1/2 transform -translate-x-1/2">
-	          <img :src="icon" width="88" height="50" alt="Tuali" />
+	    <div class="max-w-[228px] lg:h-auto h-[208px] flex items-center bg-white rounded-2xl text-black lg:px-5 px-3 lg:py-7 py-5 relative">
+	      <main class="flex flex-col lg:gap-6 gap-2">
+	        <header class="absolute top-[-28px] left-1/2 transform -translate-x-1/2">
+	          <img :src="icon" width="68" height="50" class="lg:max-h-[600px] max-h-[59px]" alt="Tuali" />
 	        </header>
-	        <span class="font-bold text-xl leading-[24px] mt-12 montserrat">{{ title }}</span>
+	        <span class="font-bold xl:text-xl text-sm leading-[24px] lg:mt-12 mt-6 montserrat">{{ title }}</span>
 	        <div class="w-full h-1 bg-[#5CC0F4]"></div>
-	        <span class="mt-2">{{ text }}</span>
+	        <span class="mt-2 xl:text-base text-xs">{{ text }}</span>
 	      </main>
 	    </div>
 	  `
@@ -29,12 +29,14 @@
 			text: String
 		},
 		template: `
-	    <div class="flex items-center gap-6">
-				<aside class="bg-[#F2E35B] w-fit px-4 py-1 rounded-full">
-					<span class="text-[#00244E] text-5xl font-bold">{{ number }}</span>
-				</aside>
-				<div class="max-w-[178px] w-fit">
-					<span class="text-2xl font-bold">{{ title }}</span>
+	    <div class="flex lg:flex-row flex-col items-center gap-6">
+				<div class="flex items-center gap-6">
+					<aside class="bg-[#F2E35B] w-fit px-4 py-1 rounded-full">
+						<span class="text-[#00244E] text-5xl font-bold">{{ number }}</span>
+					</aside>
+					<div class="max-w-[178px] w-fit">
+						<span class="text-2xl font-bold">{{ title }}</span>
+					</div>
 				</div>
 				<article class="bg-[#F2E35B] w-fit max-w-[248px] px-6 py-4 rounded-2xl">
 					<span class="text-sm text-[#00244E]"

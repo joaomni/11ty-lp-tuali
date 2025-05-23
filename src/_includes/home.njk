@@ -1,9 +1,12 @@
 {% include "menu.njk" %}
 <!-- INICIO -->
-<section id="inicio" class="w-full h-screen flex items-center justify-center relative">
-	<main class="flex w-full h-full">
+<section
+	id="inicio"
+	class="w-full lg:h-screen h-auto flex items-center justify-center relative"
+>
+	<main class="flex lg:flex-row flex-col w-full h-full">
 		<div class="basis-2/5 bg-[#00244E]">
-			<main class="h-full flex items-center justify-center">
+			<main class="h-full flex items-center justify-center pb-20 pt-40">
 				<img
 					src="/images/logo-blue.png"
 					width="230"
@@ -12,11 +15,11 @@
 				/>
 			</main>
 		</div>
-		<div class="basis-3/5 background-quem-somos px-24">
+		<div class="basis-3/5 background-quem-somos lg:px-24 py-32">
 			<tuali-text
-				class="merriweather italic text-[#00638b] text-7xl font-medium"
+				class="h-full merriweather italic text-[#00638b] lg:text-7xl text-2xl font-medium flex justify-center items-center"
 			>
-				<main class="h-full flex items-start justify-center flex-col">
+				<main class="w-fit h-full flex items-start justify-center flex-col">
 					<span>vamos juntos</span>
 					<span>transformar</span>
 					<span>o jeito de cuidar</span>
@@ -28,9 +31,12 @@
 	{% include "scrollDown.njk" %}
 </section>
 <!-- QUEM SOMOS -->
-<section id="quemsomos" class="w-full h-screen bg-[#FBF8F2]">
-	<main class="flex w-full h-full">
-		<div class="basis-2/5">
+<section
+	id="quemsomos"
+	class="w-full lg:h-screen h-auto bg-[#FBF8F2] py-28 px-6"
+>
+	<main class="w-full h-full flex lg:flex-row flex-col">
+		<div class="lg:basis-2/5">
 			<main class="w-full h-full flex items-center justify-center">
 				<img
 					src="/images/quem-somos.png"
@@ -40,26 +46,28 @@
 				/>
 			</main>
 		</div>
-		<div class="basis-3/5">
+		<div class="lg:basis-3/5">
 			<main
 				class="w-full h-full flex flex-col items-start justify-center gap-16"
 			>
-				<header>
-					<div class="flex items-center gap-12">
-						<span class="montserrat text-4xl text-[#5CC0F4] font-bold"
+				<header class="w-full">
+					<div class="w-full flex justify-center items-center gap-12">
+						<span
+							class="montserrat lg:text-4xl text-xl text-[#5CC0F4] font-bold"
 							>oi, somos a</span
 						>
 						<img
 							src="/images/logo-blue.png"
 							width="248"
 							height="100"
+							class="lg:w-[248] w-[100px]"
 							alt="Tuali"
 						/>
 					</div>
 				</header>
-				<footer>
+				<footer class="w-full lg:text-start text-center">
 					<tuali-text
-						class="text-lg text-[#00638b] block max-w-[570px] ml-[78px]"
+						class="lg:text-lg text-sm text-[#00638b] block max-w-[570px] lg:ml-[78px]"
 					>
 						<div class="flex flex-col gap-12">
 							<span
@@ -90,16 +98,20 @@
 	</main>
 </section>
 <!-- TUALI -->
-<section class="w-full h-screen bg-[#00244E] tracking-[0.5px]">
-	<main class="w-full h-full flex items-center justify-center gap-20">
+<section
+	class="w-full lg:h-screen h-auto bg-[#00244E] tracking-[0.5px] py-40 px-6"
+>
+	<main
+		class="w-full h-full flex lg:flex-row flex-col items-center justify-center gap-20"
+	>
 		<img src="/images/logo-blue.png" width="248" height="100" alt="Tuali" />
 		<img src="/images/coracao.png" width="248" height="100" alt="Tuali" />
-		<tuali-text class="flex flex-col gap-2">
+		<tuali-text class="flex flex-col lg:text-start text-center gap-2">
 			<span class="font-bold text-4xl"
 				>o que<br />
 				entregamos</span
 			>
-			<span class="montserrat italic text-xl"
+			<span class="montserrat italic lg:text-xl"
 				>temos um portfólio completo
 				<br />
 				pra sua empresa respirar aliviada</span
@@ -108,13 +120,24 @@
 	</main>
 </section>
 <!-- SERVICOS -->
-<section id="servicos" class="w-full h-screen background-servicos leading-[16px]">
-	<div class="h-full w-full flex justify-center items-center relative">
-		<aside class="absolute top-[48px] left-[34px]">
-			<img src="/images/logo-white.png" width="208" height="100" alt="Tuali" />
+<section
+	id="servicos"
+	class="w-full lg:h-auto h-auto background-servicos leading-[16px] lg:py-40 py-20 px-4"
+>
+	<div
+		class="h-full w-full flex lg:flex-row flex-col gap-20 justify-center items-center relative"
+	>
+		<aside class="lg:absolute static xl:top-[-48px] top-[-140px] left-[10px]">
+			<img
+				src="/images/logo-white.png"
+				width="208"
+				height="100"
+				class="lg:w-[208px] w-[160px] lg:block hiddden"
+				alt="Tuali"
+			/>
 		</aside>
-		<main class="flex flex-col gap-28">
-			<section class="flex gap-24">
+		<main class="flex lg:flex-col flex-row lg:gap-24 gap-4">
+			<section class="flex lg:flex-row flex-col gap-12">
 				<tuali-card
 					icon="/images/icons/empresarial.png"
 					title="planos de saúde empresariais"
@@ -131,36 +154,17 @@
 					text="proteção inteligente, com coberturas que fazem sentido de verdade."
 				></tuali-card>
 			</section>
-			<section class="flex gap-24">
+			<section class="flex lg:flex-row flex-col gap-12">
 				<tuali-card
 					icon="/images/icons/corporativos.png"
 					title="benefícios corporativos"
 					text="vale alimentação, farmácia, incentivos... a gente monta conforme o perfil da empresa."
 				></tuali-card>
-				<div
-					class="max-w-[228px] bg-white rounded-2xl text-black px-5 py-7 relative"
-				>
-					<main class="flex flex-col gap-6">
-						<header
-							class="absolute top-[-74px] left-1/2 transform -translate-x-1/2"
-						>
-							<img
-								src="/images/icons/consultoria.png"
-								width="88"
-								height="50"
-								alt="Tuali"
-							/>
-						</header>
-						<span class="font-bold text-xl leading-[24px] mt-12"
-							>consultoria estratégica</span
-						>
-						<div class="w-full h-1 bg-[#5CC0F4]"></div>
-						<span class="mt-2"
-							>diagnóstico, visão de mercado, recomendação prática. o RH ganha
-							tempo e respaldo.</span
-						>
-					</main>
-				</div>
+				<tuali-card
+					icon="/images/icons/consultoria.png"
+					title="consultoria estratégica"
+					text="diagnóstico, visão de mercado, recomendação prática. o RH ganha tempo e respaldo."
+				></tuali-card>
 				<tuali-card
 					icon="/images/icons/diversos.png"
 					title="seguros diversos"
@@ -171,14 +175,25 @@
 	</div>
 </section>
 <!-- DIFERENCIAIS -->
-<section id="diferenciais" class="w-full h-screen bg-[#5CC0F4] text-[#00638B] roboto px-16 py-12">
+<section
+	id="diferenciais"
+	class="w-full lg:h-screen h-auto bg-[#5CC0F4] text-[#00638B] roboto lg:px-16 px-4 py-12"
+>
 	<div class="flex flex-col justify-center items-center gap-16">
-		<header class="flex items-center gap-6 mr-[288px]">
-			<span class="montserrat text-5xl font-bold">Por que a</span>
-			<img src="/images/logo-white.png" width="208" height="100" alt="Tuali" />
+		<header class="flex items-center lg:gap-6 gap-4 lg:mr-[288px]">
+			<span class="montserrat lg:text-5xl text-2xl font-bold">Por que a</span>
+			<img
+				src="/images/logo-white.png"
+				width="208"
+				height="100"
+				class="lg:w-[208px] w-[100px]"
+				alt="Tuali"
+			/>
 		</header>
-		<main class="text-4xl font-bold flex items-center gap-8 leading-[42px]">
-			<div class="flex flex-col gap-28">
+		<main
+			class="lg:text-4xl text-xl font-bold flex lg:flex-row flex-col items-center gap-8 lg:leading-[42px] leading-[24px]"
+		>
+			<div class="flex lg:flex-col flex-row w-full justify-between items-start lg:gap-28 gap-6">
 				<span>
 					&nbsp;porque a gente<br />
 					<span class="bg-[#B3D1E6]">&nbsp;entrega com&nbsp;</span><br />
@@ -190,12 +205,12 @@
 					&nbsp;seu<span class="bg-[#B3D1E6]">&nbsp;time &nbsp;</span>
 				</span>
 			</div>
-			<div class="flex flex-col items-center gap-12">
-				<div class="w-1 h-[180px] bg-[#B3D1E6]"></div>
-				<div class="w-[120px] h-1 bg-[#B3D1E6]"></div>
-				<div class="w-1 h-[180px] bg-[#B3D1E6]"></div>
+			<div class="flex w-full lg:flex-col flex-row items-center lg:gap-12 gap-6">
+				<div class="lg:w-1 lg:h-[180px] w-full h-0.5 bg-[#B3D1E6]"></div>
+				<div class="lg:w-[120px] lg:h-1 w-1 h-[48px] bg-[#B3D1E6]"></div>
+				<div class="lg:w-1 lg:h-[180px] w-full h-0.5 bg-[#B3D1E6]"></div>
 			</div>
-			<div class="flex flex-col gap-28">
+			<div class="flex lg:flex-col flex-row w-full justify-between items-start lg:gap-28 gap-6">
 				<span>
 					porque a<br />
 					<span class="bg-[#B3D1E6]">gente&nbsp;</span><br />
@@ -207,13 +222,13 @@
 					<span class="bg-[#B3D1E6]">&nbsp;enrolação&nbsp;</span>
 				</span>
 			</div>
-			<div class="flex flex-col items-center gap-12">
-				<div class="w-1 h-[180px] bg-[#B3D1E6]"></div>
-				<div class="w-[120px] h-1 bg-[#B3D1E6]"></div>
-				<div class="w-1 h-[180px] bg-[#B3D1E6]"></div>
+			<div class="flex w-full lg:flex-col flex-row items-center lg:gap-12 gap-6">
+				<div class="lg:w-1 lg:h-[180px] w-full h-0.5 bg-[#B3D1E6]"></div>
+				<div class="lg:w-[120px] lg:h-1 w-1 h-[48px] bg-[#B3D1E6]"></div>
+				<div class="lg:w-1 lg:h-[180px] w-full h-0.5 bg-[#B3D1E6]"></div>
 			</div>
-			<div class="flex">
-				<span>
+			<div class="w-full flex items-center justify-center">
+				<span class="lg:block hidden">
 					&nbsp;e porque saúde<br />
 					&nbsp;e benefícios<br />
 					<span class="bg-[#B3D1E6]">&nbsp;precisam sair&nbsp;</span><br />
@@ -225,17 +240,23 @@
 						>&nbsp;vida real&nbsp;&nbsp;&nbsp;&nbsp;</span
 					>
 				</span>
+				<span class="lg:hidden block">
+					e porque saúde e benefícios
+					<span class="bg-[#B3D1E6]">precisam sair</span>
+					do papel e
+					<span class="bg-[#B3D1E6]">fazer sentido na vida real</span>
+				</span>
 			</div>
 		</main>
 	</div>
 </section>
 <!-- COMO FAZEMOS-->
-<section id="comofazemos" class="w-full h-screen bg-[#00244E] roboto">
+<section id="comofazemos" class="w-full lg:h-screen h-auto bg-[#00244E] roboto lg:px-16 px-4">
 	<div
-		class="w-full h-full flex items-center justify-center justify-center gap-40 px-16"
+		class="w-full h-full flex lg:flex-row flex-col items-center justify-center justify-center lg:gap-40 gap-20"
 	>
 		<article class="relative">
-			<aside class="absolute top-[-160px] left-[-140px]">
+			<aside class="lg:absolute static top-[-160px] left-[-140px]">
 				<img
 					src="/images/logo-white.png"
 					width="208"
@@ -258,7 +279,7 @@
 				</span>
 			</main>
 		</article>
-		<main class="flex flex-col gap-6">
+		<main class="flex flex-col lg:gap-6 gap-8">
 			<tuali-box
 				number="1"
 				title="entendemos você"
