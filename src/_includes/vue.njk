@@ -30,7 +30,7 @@
 		},
 		template: `
 	    <div class="flex lg:flex-row flex-col items-center gap-6">
-				<div class="flex items-center gap-6">
+				<div class="w-full flex items-center justify-start gap-6">
 					<aside class="bg-[#F2E35B] w-fit px-4 py-1 rounded-full">
 						<span class="text-[#00244E] text-5xl font-bold">{{ number }}</span>
 					</aside>
@@ -38,7 +38,7 @@
 						<span class="text-2xl font-bold">{{ title }}</span>
 					</div>
 				</div>
-				<article class="bg-[#F2E35B] w-fit max-w-[248px] px-6 py-4 rounded-2xl">
+				<article class="bg-[#F2E35B] w-fit lg:max-w-[248px] px-6 py-4 rounded-2xl">
 					<span class="text-sm text-[#00244E]"
 						>{{ text }}</span
 					>
@@ -59,8 +59,8 @@
 				>
 					<span class="text-center text-lg font-bold roboto">{{ title }}</span>
 				</header>
-				<footer class="bg-[#FFD8CA] px-6 py-3 rounded-lg">
-					<span class="text-black">
+				<footer class="bg-[#FFD8CA] px-6 py-3 rounded-lg lg: lg:max-w-full max-w-[280px]">
+					<span class="text-black lg:text-base text-xs">
 						{{ text }}
 					</span>
 				</footer>
@@ -90,6 +90,7 @@
 				:fill="fill"
 				:width="width"
 				:height="height"
+				class="lg:w-[48px] w-[34px]"
 			>
 				<g>
 					<path

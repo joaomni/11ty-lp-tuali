@@ -162,7 +162,7 @@
 						/>
 					</div>
 				</header>
-				<footer class="w-full lg:text-start text-center">
+				<footer class="w-full flex justify-center lg:text-start text-center">
 					<tuali-text
 						class="lg:text-lg text-sm text-[#00638b] block max-w-[570px] lg:ml-[78px]"
 					>
@@ -274,7 +274,7 @@
 <!-- DIFERENCIAIS -->
 <section
 	id="diferenciais"
-	class="w-full lg:h-screen h-auto bg-[#5CC0F4] text-[#00638B] roboto lg:px-16 px-4 py-12"
+	class="w-full h-auto bg-[#5CC0F4] text-[#00638B] roboto xl:px-16 px-4 py-12"
 >
 	<div class="flex flex-col justify-center items-center gap-16">
 		<header class="flex items-center lg:gap-6 gap-4 lg:mr-[288px]">
@@ -290,7 +290,9 @@
 		<main
 			class="lg:text-4xl text-xl font-bold flex lg:flex-row flex-col items-center gap-8 lg:leading-[42px] leading-[24px]"
 		>
-			<div class="flex lg:flex-col flex-row w-full justify-between items-start lg:gap-28 gap-6">
+			<div
+				class="flex lg:flex-col flex-row w-full justify-between items-start lg:gap-28 gap-6"
+			>
 				<span>
 					&nbsp;porque a gente<br />
 					<span class="bg-[#B3D1E6]">&nbsp;entrega com&nbsp;</span><br />
@@ -302,12 +304,16 @@
 					&nbsp;seu<span class="bg-[#B3D1E6]">&nbsp;time &nbsp;</span>
 				</span>
 			</div>
-			<div class="flex w-full lg:flex-col flex-row items-center lg:gap-12 gap-6">
+			<div
+				class="flex w-full lg:flex-col flex-row items-center lg:gap-12 gap-6"
+			>
 				<div class="lg:w-1 lg:h-[180px] w-full h-0.5 bg-[#B3D1E6]"></div>
 				<div class="lg:w-[120px] lg:h-1 w-1 h-[48px] bg-[#B3D1E6]"></div>
 				<div class="lg:w-1 lg:h-[180px] w-full h-0.5 bg-[#B3D1E6]"></div>
 			</div>
-			<div class="flex lg:flex-col flex-row w-full justify-between items-start lg:gap-28 gap-6">
+			<div
+				class="flex lg:flex-col flex-row w-full justify-between items-start lg:gap-28 gap-6"
+			>
 				<span>
 					porque a<br />
 					<span class="bg-[#B3D1E6]">gente&nbsp;</span><br />
@@ -319,13 +325,15 @@
 					<span class="bg-[#B3D1E6]">&nbsp;enrolação&nbsp;</span>
 				</span>
 			</div>
-			<div class="flex w-full lg:flex-col flex-row items-center lg:gap-12 gap-6">
+			<div
+				class="flex w-full lg:flex-col flex-row items-center lg:gap-12 gap-6"
+			>
 				<div class="lg:w-1 lg:h-[180px] w-full h-0.5 bg-[#B3D1E6]"></div>
 				<div class="lg:w-[120px] lg:h-1 w-1 h-[48px] bg-[#B3D1E6]"></div>
 				<div class="lg:w-1 lg:h-[180px] w-full h-0.5 bg-[#B3D1E6]"></div>
 			</div>
 			<div class="w-full flex items-center justify-center">
-				<span class="lg:block hidden">
+				<span class="xl:block hidden">
 					&nbsp;e porque saúde<br />
 					&nbsp;e benefícios<br />
 					<span class="bg-[#B3D1E6]">&nbsp;precisam sair&nbsp;</span><br />
@@ -337,7 +345,7 @@
 						>&nbsp;vida real&nbsp;&nbsp;&nbsp;&nbsp;</span
 					>
 				</span>
-				<span class="lg:hidden block">
+				<span class="xl:hidden block">
 					e porque saúde e benefícios
 					<span class="bg-[#B3D1E6]">precisam sair</span>
 					do papel e
@@ -348,20 +356,24 @@
 	</div>
 </section>
 <!-- COMO FAZEMOS-->
-<section id="comofazemos" class="w-full lg:h-screen h-auto bg-[#00244E] roboto lg:px-16 px-4">
+<section
+	id="comofazemos"
+	class="w-full lg:h-screen h-auto bg-[#00244E] roboto lg:px-16 px-4 py-16"
+>
 	<div
-		class="w-full h-full flex lg:flex-row flex-col items-center justify-center justify-center lg:gap-40 gap-20"
+		class="w-full h-full flex lg:flex-row flex-col items-center justify-center lg:gap-40 gap-20"
 	>
-		<article class="relative">
+		<article class="relative flex flex-col gap-8">
 			<aside class="lg:absolute static top-[-160px] left-[-140px]">
 				<img
 					src="/images/logo-white.png"
 					width="208"
 					height="100"
+					class="lg:w-[208px] w-[100px]"
 					alt="Tuali"
 				/>
 			</aside>
-			<main class="flex flex-col gap-8">
+			<main class="lg:flex hidden flex-col gap-8">
 				<span class="text-4xl">
 					<p><span class="font-bold">Como</span> a</p>
 					<p>gente <span class="font-bold">faz</span></p>
@@ -375,6 +387,18 @@
 					<p>ou joguinho de empurra.</p>
 				</span>
 			</main>
+			<mobile-main class="lg:hidden flex flex-col gap-4">
+				<span class="text-4xl">
+					<p><span class="font-bold">Como</span> a gente</p>
+					<p span class="font-bold">faz acontecer!</p>
+				</span>
+				<span class="text-lg">
+					<p>
+						nosso jeito de trabalhar é leve, claro e focado em resultado. Nada
+						de processos engessados ou joguinho de empurra.
+					</p>
+				</span>
+			</mobile-main>
 		</article>
 		<main class="flex flex-col lg:gap-6 gap-8">
 			<tuali-box
@@ -406,9 +430,17 @@
 	</div>
 </section>
 <!-- COMPROMISSO -->
-<section id="compromisso" class="w-full h-screen background-compromisso lora">
-	<div class="w-full h-full grid grid-cols-3 px-20 py-20">
-		<main class="w-full h-full flex flex-col justify-between items-center">
+<section
+	id="compromisso"
+	class="w-full lg:h-screen h-auto background-compromisso lg:px-20 px-8 py-20 lora"
+>
+	<header class="lg:hidden flex justify-center">
+		<img src="/images/logo-mask.png" width="248" height="100" class="w-full" alt="Tuali" />
+	</header>
+	<div class="w-full h-full lg:grid grid-cols-3 flex flex-col lg:pt-0 pt-20">
+		<main
+			class="w-full h-full flex flex-col justify-between items-center lg:gap-0 gap-16"
+		>
 			<div class="mr-auto">
 				<tuali-compromisso
 					title="implantação com carinho"
@@ -422,7 +454,7 @@
 				></tuali-compromisso>
 			</div>
 		</main>
-		<main class="w-full h-full flex flex-col justify-end items-center">
+		<main class="w-full h-full flex flex-col justify-end items-center pb-16">
 			<div class="ml-auto">
 				<tuali-compromisso
 					title="comunicação simples"
@@ -430,14 +462,16 @@
 				></tuali-compromisso>
 			</div>
 		</main>
-		<main class="w-full h-full flex flex-col justify-between items-center">
+		<main
+			class="w-full h-full flex flex-col justify-between items-center lg:gap-0 gap-16"
+		>
 			<div class="mr-auto">
 				<tuali-compromisso
 					title="operações que voam baixo"
 					text="Inclusões, exclusões, movimentações. Tudo com velocidade e segurança pro RH."
 				></tuali-compromisso>
 			</div>
-			<div class="ml-auto mb-[200px]">
+			<div class="ml-auto lg:mb-[200px]">
 				<tuali-compromisso
 					title="relacionamento que responde"
 					text="Um time real, presente e pronto para resolver. Nada de fila de espera infinita."
@@ -449,8 +483,8 @@
 <!-- CONTATO -->
 <section id="contato" class="w-full h-screen bg-[#00244E] montserrat">
 	<main class="w-full h-full flex flex-col items-center justify-center gap-20">
-		<header class="flex items-center gap-20 mt-[10vh] relative">
-			<aside class="absolute left-[-308px]">
+		<header class="flex lg:flex-row flex-col items-center lg:gap-20 gap-8 mt-[10vh] relative">
+			<aside class="lg:absolute static left-[-308px]">
 				<img
 					src="/images/logo-blue.png"
 					width="230"
@@ -458,19 +492,19 @@
 					alt="Logo Tuali"
 				/>
 			</aside>
-			<span class="font-bold text-4xl">
+			<span class="font-bold lg:text-4xl text-3xl">
 				<p class="lora">A gente caminha</p>
 				<p class="italic">Junto com você!</p>
 			</span>
 		</header>
-		<footer class="flex flex-col gap-4">
-			<div class="flex items-center gap-4">
+		<footer class="flex flex-col lg:gap-4 gap-8">
+			<div class="flex lg:flex-row flex-col items-center lg:gap-4 gap-2">
 				<svg-whatsapp width="48" height="48" fill="#5CC0F4"></svg-whatsapp>
-				<p class="text-2xl">+55 11 93737 3032</p>
+				<p class="lg:text-2xl text-lg">+55 11 93737 3032</p>
 			</div>
-			<div class="flex items-center gap-4">
-				<img src="/images/email.png" width="48" height="48" alt="Email Tuali" />
-				<p class="text-2xl">atendimento@tuali.com.br</p>
+			<div class="flex lg:flex-row flex-col items-center lg:gap-4 gap-2">
+				<img src="/images/email.png" width="48" height="48" class="lg:w-[48px] w-[34px]" alt="Email Tuali" />
+				<p class="lg:text-2xl text-lg">atendimento@tuali.com.br</p>
 			</div>
 		</footer>
 	</main>
@@ -521,7 +555,7 @@
 		},
 		template: `
 	    <div class="flex lg:flex-row flex-col items-center gap-6">
-				<div class="flex items-center gap-6">
+				<div class="w-full flex items-center justify-start gap-6">
 					<aside class="bg-[#F2E35B] w-fit px-4 py-1 rounded-full">
 						<span class="text-[#00244E] text-5xl font-bold">{{ number }}</span>
 					</aside>
@@ -529,7 +563,7 @@
 						<span class="text-2xl font-bold">{{ title }}</span>
 					</div>
 				</div>
-				<article class="bg-[#F2E35B] w-fit max-w-[248px] px-6 py-4 rounded-2xl">
+				<article class="bg-[#F2E35B] w-fit lg:max-w-[248px] px-6 py-4 rounded-2xl">
 					<span class="text-sm text-[#00244E]"
 						>{{ text }}</span
 					>
@@ -550,8 +584,8 @@
 				>
 					<span class="text-center text-lg font-bold roboto">{{ title }}</span>
 				</header>
-				<footer class="bg-[#FFD8CA] px-6 py-3 rounded-lg">
-					<span class="text-black">
+				<footer class="bg-[#FFD8CA] px-6 py-3 rounded-lg lg: lg:max-w-full max-w-[280px]">
+					<span class="text-black lg:text-base text-xs">
 						{{ text }}
 					</span>
 				</footer>
@@ -581,6 +615,7 @@
 				:fill="fill"
 				:width="width"
 				:height="height"
+				class="lg:w-[48px] w-[34px]"
 			>
 				<g>
 					<path
