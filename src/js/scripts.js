@@ -8,3 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
 		})
 	})
 })
+
+function scrollToId(e, id) {
+	e.preventDefault()
+	document.getElementById(id).scrollIntoView({
+		behavior: 'smooth',
+		block: 'start' // ou 'center' / 'end' conforme necessidade
+	})
+}
